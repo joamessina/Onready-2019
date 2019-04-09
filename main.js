@@ -34,3 +34,11 @@ class Moto extends Vehiculo {
 	}
 	
 }
+
+let v1 = new Auto("Peugeot", 206, 200000, 4)
+
+let v2 = new Moto("Honda", "Titan", 60000, "125c")
+
+let v3 = new Auto("Peugeot", 208, 250000, 5)
+
+let v4 = new Moto("Yamaha", "YBR", 80000.50, "160c")
