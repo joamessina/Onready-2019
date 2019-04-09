@@ -15,3 +15,12 @@ class Auto extends Vehiculo {
 	}
 	
 }
+
+class Moto extends Vehiculo {
+
+	constructor(marca, modelo, precio, cilindrada){
+		super(marca, modelo, precio)
+		this.Cilindrada = cilindrada
+	}
+	
+}
