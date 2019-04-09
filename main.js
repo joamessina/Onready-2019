@@ -42,3 +42,8 @@ let v2 = new Moto("Honda", "Titan", 60000, "125c")
 let v3 = new Auto("Peugeot", 208, 250000, 5)
 
 let v4 = new Moto("Yamaha", "YBR", 80000.50, "160c")
+
+v1.Mostrar()
+v2.Mostrar()
+v3.Mostrar()
+v4.Mostrar()
