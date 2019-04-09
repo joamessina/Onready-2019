@@ -5,6 +5,16 @@ class Vehiculo {
 		this.Modelo = modelo
 		this.Precio = precio
 	}
+	Mostrar(){
+
+		let msg = "";
+		for(let prop in this){
+
+			msg += `${prop}: ${this[prop]} // `
+
+		}
+		console.log(msg)
+	}
 }
 
 class Auto extends Vehiculo {
