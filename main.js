@@ -6,3 +6,12 @@ class Vehiculo {
 		this.Precio = precio
 	}
 }
+
+class Auto extends Vehiculo {
+
+	constructor(marca, modelo, precio, puertas){
+		super(marca, modelo, precio)
+		this.Puertas = puertas
+	}
+	
+}
