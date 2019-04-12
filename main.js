@@ -75,5 +75,15 @@ let masBarato = vehiculos.reduce(function(anterior, actual){
 	}
 })
 
+let conY = vehiculos.find(function(vehiculo){
+	
+	let modelo = vehiculo.Modelo.toString()
+
+	if( modelo.indexOf("Y") >= 0 ){
+		return vehiculo
+	}
+})
+
 console.log(`Vehiculo más caro: ${masCaro.Marca} ${masCaro.Modelo}`)
 console.log(`Vehiculo más barato: ${masBarato.Marca} ${masBarato.Modelo}`)
+console.log(`Vehiculo que contiene en el modelo la letra 'Y': ${conY.Marca} ${conY.Modelo} ${conY.Precio}`)
