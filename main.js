@@ -56,3 +56,14 @@ Vehiculo.Agregar(vehiculos, v4)
 vehiculos.forEach(function(vehiculo){
 	vehiculo.Mostrar()
 })
+
+let masCaro = vehiculos.reduce(function(anterior, actual){
+
+	if( anterior.Precio > actual.Precio ){
+		return anterior
+	} else {
+		return actual
+	}
+})
+
+console.log(`Vehiculo más caro: ${masCaro.Marca} ${masCaro.Modelo}`)
