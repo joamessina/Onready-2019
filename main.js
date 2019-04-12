@@ -46,7 +46,13 @@ let v3 = new Auto("Peugeot", 208, 250000, 5)
 
 let v4 = new Moto("Yamaha", "YBR", 80000.50, "160c")
 
-v1.Mostrar()
-v2.Mostrar()
-v3.Mostrar()
-v4.Mostrar()
+let vehiculos = new Array()
+
+Vehiculo.Agregar(vehiculos, v1)
+Vehiculo.Agregar(vehiculos, v2)
+Vehiculo.Agregar(vehiculos, v3)
+Vehiculo.Agregar(vehiculos, v4)
+
+vehiculos.forEach(function(vehiculo){
+	vehiculo.Mostrar()
+})
