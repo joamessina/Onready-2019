@@ -84,6 +84,21 @@ let conY = vehiculos.find(function(vehiculo){
 	}
 })
 
+let ordenados = vehiculos.sort(function(anterior, actual){
+
+	if( anterior.Precio > actual.Precio ){
+		return -1
+	} else {
+		return 1
+	}
+
+})
+
 console.log(`Vehiculo más caro: ${masCaro.Marca} ${masCaro.Modelo}`)
 console.log(`Vehiculo más barato: ${masBarato.Marca} ${masBarato.Modelo}`)
 console.log(`Vehiculo que contiene en el modelo la letra 'Y': ${conY.Marca} ${conY.Modelo} ${conY.Precio}`)
+console.log(`Vehiculo ordenados por precio de mayor a menor:`)
+
+ordenados.forEach(function(vehiculo){
+	console.log(`${vehiculo.Marca} ${vehiculo.Modelo}`)
+})
