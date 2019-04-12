@@ -15,6 +15,9 @@ class Vehiculo {
 		}
 		console.log(msg)
 	}
+	static Agregar(lista, vehiculo){
+		lista.push( vehiculo )
+	}
 }
 
 class Auto extends Vehiculo {
